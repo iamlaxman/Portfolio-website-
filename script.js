@@ -48,6 +48,18 @@ $(document).ready(function(){
         loop: true
     });
 
+//read more button
+document.getElementById("read-more-btn").addEventListener("click", function () {
+    const content = document.getElementById("extra-content");
+    if (content.style.display === "none") {
+        content.style.display = "block";
+        this.textContent = "Read less";
+    } else {
+        content.style.display = "none";
+        this.textContent = "Read more";
+    }
+});
+
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
