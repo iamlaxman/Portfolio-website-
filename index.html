@@ -512,22 +512,26 @@
             <input type="email" name="email" placeholder="Email" required>
         </div>
     </div>
+
     <div class="field">
         <input type="text" name="subject" placeholder="Subject" required>
     </div>
+
     <div class="field textarea">
         <textarea name="message" cols="30" rows="10" placeholder="Message.." required></textarea>
     </div>
+
     <div class="button-area">
         <button type="submit">Send message</button>
     </div>
 
-    <!-- Optional Hidden Fields -->
+    <!-- Optional Hidden Fields for FormSubmit -->
     <input type="hidden" name="_captcha" value="false"> <!-- Disables CAPTCHA -->
-    <input type="hidden" name="_subject" value="New Contact Form Submission"> <!-- Default Email Subject -->
+    <input type="hidden" name="_subject" value="New Contact Form Submission"> <!-- Default email subject -->
     <input type="hidden" name="_template" value="table"> <!-- Sends email in table format -->
     <input type="hidden" name="_next" value="submit.html"> <!-- Redirects after submission -->
 </form>
+
 
                 </div>
 
